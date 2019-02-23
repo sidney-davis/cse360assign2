@@ -24,43 +24,48 @@ public class Calculator {
 	}
 	
 	/**
-	 * This method gets the total and returns zero.
-	 * @return Returns 0
+	 * This method gets the total and returns that value.
+	 * @return Returns total
 	 */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	/**
-	 * This method currently has no use.
-	 * @param value An integer value
+	 * This method adds the parameter value to the total.
+	 * @param value An integer value that adds to total
 	 */
 	public void add (int value) {
-		
+		total += value;
 	}
 	
 	/**
-	 * This method currently has no use.
-	 * @param value An integer value
+	 * This method subtracts the parameter value from the total.
+	 * @param value An integer value that subtracts from total
 	 */
 	public void subtract (int value) {
-		
+		total -= value;
 	}
 	
 	/**
-	 * This method currently has no use.
-	 * @param value An integer value
+	 * This method multiplies the total by the parameter value.
+	 * @param value An integer value that multiplies the total.
 	 */
 	public void multiply (int value) {
-		
+		total *= value;
 	}
 	
 	/**
-	 * This method currently has no use.
-	 * @param value An integer value
+	 * This method represents the division operator and divides the total by an integer value using integer division.
+	 * If the parameter is zero, the total is set to zero
+	 * @param value An integer that divides the total by this parameter
 	 */
 	public void divide (int value) {
-		
+		if (value == 0) {
+			total = 0;
+		} else {
+			total /= value;
+		}
 	}
 	
 	/**
